@@ -174,6 +174,8 @@ run_shiny <- function(model = "SIR", neweqns = NULL,
 
             # Run ODE solver
             ODEoutput <- solve_eqns(eqns, ics, times = times_vector, parms = parms_vector)
+            
+            ODEoutput <- dplyr::filter(ODEoutput, variable == "I")
 
             # Plot output
             plot_model(ODEoutput, linesize, textsize, xlabel, ylabel, legend_title, levels = names(ics), values, ...)
