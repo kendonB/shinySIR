@@ -18,7 +18,7 @@ get_params <- function(model){
             parm0 = c(R0 = 0.4, Ip = 7),
             parm_names = c("R0", "Infectious period"),
             parm_min = c(R0 = 0.2, Ip = 1),
-            parm_max = c(R0 =0.4, Ip = 21)
+            parm_max = c(R0 =0.6, Ip = 21)
         )
     }
 
