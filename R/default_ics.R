@@ -10,7 +10,7 @@ get_ics <- function(model){
 
     # SIR variants
     if(substr(model, start = 1, stop = 3) == "SIR" ){
-        ics <- c(S = 9999, I = 1, R = 0)
+        ics <- c(S = 330000000*0.7, I = 3000000, R = 330000000*0.3 - 3000000)
     }
 
     # Other
