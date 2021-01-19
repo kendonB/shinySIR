@@ -15,10 +15,10 @@ get_params <- function(model){
 
     if(model == "SIR"){
         params <- list(
-            parm0 = c(R0 = 3, Ip = 7),
+            parm0 = c(R0 = 0.4, Ip = 7),
             parm_names = c("R0", "Infectious period"),
-            parm_min = c(R0 = 0, Ip = 1),
-            parm_max = c(R0 = 20, Ip = 21)
+            parm_min = c(R0 = 0.2, Ip = 1),
+            parm_max = c(R0 =0.4, Ip = 21)
         )
     }
 
