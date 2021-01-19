@@ -24,6 +24,7 @@ plot_model <- function(output, linesize, textsize, xlabel, ylabel, legend_title,
             theme_bw() + theme(axis.text = element_text(size = textsize),
                                axis.title= element_text(size = textsize + 2),
                                legend.text = element_text(size = textsize),
-                               legend.title = element_text(size = textsize + 2) )
+                               legend.title = element_text(size = textsize + 2) ) + 
+            scale_y_log10()
 
 }
