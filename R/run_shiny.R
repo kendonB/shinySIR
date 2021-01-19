@@ -32,7 +32,7 @@
 
 run_shiny <- function(model = "SIR", neweqns = NULL,
                       ics = NULL,
-                      tstart = 0, timestep = 1, tmax = 100,
+                      tstart = 0, timestep = 1, tmax = 150,
                       parm0 = NULL,
                       parm_names = NULL,
                       parm_min = NULL,
